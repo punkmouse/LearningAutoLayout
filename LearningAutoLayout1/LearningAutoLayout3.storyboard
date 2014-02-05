@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wQI-Wo-10d">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pBj-lc-f5V">
+            <objects>
+                <viewController id="wQI-Wo-10d" customClass="ALViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cez-eS-53g"/>
+                        <viewControllerLayoutGuide type="bottom" id="sRJ-HM-vtl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FdD-mv-hsm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3O-RX-bif">
+                                <rect key="frame" x="113" y="518" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1669639305" green="1" blue="0.45036098460000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A longer label">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="wQI-Wo-10d" eventType="touchUpInside" id="Hbd-9D-2Fq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-Ru-FZv">
+                                <rect key="frame" x="113" y="448" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="wQI-Wo-10d" eventType="touchUpInside" id="Rmh-Vf-x1e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q3O-RX-bif" firstAttribute="top" secondItem="w4j-Ru-FZv" secondAttribute="bottom" constant="40" id="CF5-j0-jle"/>
+                            <constraint firstItem="w4j-Ru-FZv" firstAttribute="leading" secondItem="Q3O-RX-bif" secondAttribute="leading" id="f8O-a7-EPH"/>
+                            <constraint firstAttribute="bottom" secondItem="Q3O-RX-bif" secondAttribute="bottom" constant="20" id="gZ9-rg-TMm"/>
+                            <constraint firstAttribute="centerX" secondItem="Q3O-RX-bif" secondAttribute="centerX" id="l1R-cj-Zwa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5L8-9d-hp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="104"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
